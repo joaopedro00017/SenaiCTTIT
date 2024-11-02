@@ -1,0 +1,84 @@
+/* Estilo Geral*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+/* Conteudo da Pagina */
+
+/* Configurações de Texto para Todas as Paginas */
+.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: #0047B6;
+    font-size: 42px;
+    line-height: 40px;
+    margin: 50px;
+    text-align: center;
+}
+
+.topo-do-site h1 span {
+    color: #0047B6;
+}
+
+.topo-do-site p span {
+    color: #0047B6;
+}
+
+.topo-do-site p {
+    color: #231f20;
+    margin: 40px 0;
+    line-height: 20px;
+    font-size: 18px;
+}
+
+/* Catologo de cursos(Pagina2) */
+
+
+.catalogo {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as imagens quebrem para uma nova linha */
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    gap: 20px;
+}
+
+.curso-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(25% - 20px); /* Ajusta a largura das imagens para 4 por linha */
+}
+
+.curso-item img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; /* Ajusta a proporção da imagem */
+    margin-bottom: 10px;
+}
+
+/* Responsividade (Exemplo) */
+@media (max-width: 768px) {
+    .curso-item {
+        width: calc(50% - 20px); /* 2 imagens por linha em telas menores */
+    }
+}
+
+.txt-topo-site h1, .txt-topo-site h2 {
+    margin: 10px 0; 
+}
+
+.interface {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
